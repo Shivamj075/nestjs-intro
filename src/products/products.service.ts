@@ -12,4 +12,8 @@ export class ProductsService{
         this.products.push(newProduct);
         return prodId;
     }
+
+    getProducts() {
+        return [...this.products]; //pulling out all elements and add them as new elements and products themselver are obj & we don't copy those
+    }
 }
